@@ -13,8 +13,8 @@ app.get("/", (req, res) => {
     res.send("Hello World!");
 });
 
-app.use('/api/v1/jobs', jobRoutes);
+app.use('/api/', jobRoutes);
 
 app.listen(PORT,()=>{
-    console.log(`Server is running on http://localhost:${PORT}`);
+    console.log(`Server is running on ${PORT}`);
 })
